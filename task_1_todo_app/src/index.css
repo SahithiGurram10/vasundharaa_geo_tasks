@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+}
+
+.app {
+  max-width: 500px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.todo-form,
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.priority {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.priority.high { color: red; }
+.priority.medium { color: orange; }
+.priority.low { color: green; }
+
+.empty {
+  text-align: center;
+  color: gray;
+}
