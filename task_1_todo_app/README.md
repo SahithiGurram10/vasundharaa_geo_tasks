@@ -4,9 +4,9 @@ A simple and clean Todo application built using React as part of an internship a
 
 ## 1. Brief of Project
 
-This Todo application helps users manage their daily tasks in an organized way. Users can add new tasks, view all existing tasks, and mark tasks as completed once they are done. The application is designed with a clean and minimal user interface to provide a smooth and intuitive user experience.
+This project is a React-based Todo application developed as part of a React internship assignment. The application allows users to add, delete, complete, and prioritize tasks, helping them manage their daily activities effectively.
 
-This project demonstrates fundamental React concepts such as component-based architecture, state management using hooks, event handling, and conditional rendering. It serves as a beginner-friendly project to understand how React can be used to build dynamic and interactive web applications.
+The project is built using React functional components and hooks, following a modular and reusable component structure. Task data is persisted using browser localStorage to ensure tasks are not lost on page refresh. The user interface is styled using CSS Modules, providing scoped and maintainable styles while keeping the design clean and visually appealing.
 
 ## 2. Features
 

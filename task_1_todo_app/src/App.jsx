@@ -38,7 +38,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Todo App</h1>
+      <h1 class="text-2xl font-bold mb-4 text-center">Todo App</h1>
+
 
       <TodoForm onAddTask={addTask} />
       <FilterBar currentFilter={filter} onChangeFilter={setFilter} />
