@@ -1,7 +1,7 @@
-const TimerInput = ({ value, onChange, disabled }) => {
+export default function TimerInput({ value, onChange, disabled }) {
   const handleChange = (e) => {
     const val = e.target.value;
-    if (/^\d*$/.test(val) && Number(val) > 0) {
+    if (/^\d+$/.test(val) && Number(val) > 0) {
       onChange(Number(val));
     }
   };
@@ -17,6 +17,4 @@ const TimerInput = ({ value, onChange, disabled }) => {
       />
     </div>
   );
-};
-
-export default TimerInput;
+}

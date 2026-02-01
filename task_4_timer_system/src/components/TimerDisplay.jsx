@@ -1,13 +1,9 @@
-const TimerDisplay = ({ remainingTime, status, isCompleted }) => {
-  const seconds = (remainingTime / 1000).toFixed(3);
-
+export default function TimerDisplay({ remainingMs, status }) {
   return (
     <div style={{ marginTop: "20px" }}>
-      <h3>Time Remaining: {seconds}s</h3>
+      <h3>Remaining Time: {(remainingMs / 1000).toFixed(3)} s</h3>
       <p>Status: {status}</p>
-      {isCompleted && <h2>⏰ Time’s up!</h2>}
+      {status === "Completed" && <h2>⏰ Time’s up!</h2>}
     </div>
   );
-};
-
-export default TimerDisplay;
+}
