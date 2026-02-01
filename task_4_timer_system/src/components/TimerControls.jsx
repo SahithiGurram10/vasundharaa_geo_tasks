@@ -13,7 +13,9 @@ export default function TimerControls({
 
       {status === "Paused" && <button onClick={onResume}>Resume</button>}
 
-      {(status === "Running" || status === "Paused") && (
+      {(status === "Running" ||
+        status === "Paused" ||
+        status === "Completed") && (
         <button onClick={onReset}>Reset</button>
       )}
     </div>
