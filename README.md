@@ -23,7 +23,7 @@ This repository contains the implementation of the React Developer Intern assign
 ### Installation Steps
 1. Clone the repository:
    ```bash
-   git clone <your-github-repository-link>
+   git clone <https://github.com/SahithiGurram10/vasundharaa_geo_tasks>
   ```
 2. Navigate to the project directory:
 ```
