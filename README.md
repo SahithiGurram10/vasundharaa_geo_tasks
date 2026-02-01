@@ -1,4 +1,5 @@
 React Intern Assignment – Vasundharaa Geo Technologies
+
 This repository contains the solutions for the React Developer Intern Assignment. The project demonstrates core and advanced React concepts including component-based architecture, state management, form handling, localStorage usage, UI synchronization, and dynamic rendering.
 
 1. Tech Stack
