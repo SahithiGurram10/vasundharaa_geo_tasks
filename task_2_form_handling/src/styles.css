@@ -1,0 +1,43 @@
+/* src/styles.css */
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.password-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 15px;
+  border: 1px solid #ccc;
+}
