@@ -2,13 +2,15 @@ import { useEffect, useRef, useState } from "react";
 import TimerInput from "./components/TimerInput";
 import TimerDisplay from "./components/TimerDisplay";
 import TimerControls from "./components/TimerControls";
+import "./App.css";
+
 
 const STORAGE_KEY = "advanced_timer";
 
 export default function App() {
   const [inputSeconds, setInputSeconds] = useState(10);
   const [remainingMs, setRemainingMs] = useState(10000);
-  const [status, setStatus] = useState("Idle"); // Idle | Running | Paused | Completed
+  const [status, setStatus] = useState("Idle"); 
 
   const intervalRef = useRef(null);
   const endTimeRef = useRef(null);

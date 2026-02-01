@@ -1,57 +1,69 @@
-# React Form Handling App
+# React Progress Bar Application
 
-A simple and well-structured React application built as part of a React internship assignment to demonstrate form handling, validation, and password visibility toggle.
+A React-based progress bar application built as part of a React internship assignment.  
+This project demonstrates dynamic UI updates, numeric input handling, state-based styling, and component modularity.
 
 ---
 
 ## 1. Brief of Project
 
-This project is a React-based form handling application that allows users to enter their personal details such as Name, Email, ID, and Password. On form submission, the application validates user input, prevents page reload, and displays the submitted data below the form.
+This application allows users to enter multiple percentage values (0–100) through input fields.  
+Based on the entered values, a single main progress bar updates dynamically and visually represents the combined progress.  
+Individual sub-progress bars are displayed for each input value.
 
-The application focuses on demonstrating core React concepts including controlled components, state management using React Hooks, form validation, conditional rendering, and component reusability. A Show/Hide Password feature is implemented to enhance user experience.
-
-This project is designed to be clean, beginner-friendly, and aligned with real-world React development practices.
+The project focuses on React fundamentals such as controlled components, state management using hooks, inline styling, animations, and UI synchronization.
 
 ---
 
 ## 2. Features
 
-- Input fields for Name, Email, ID, and Password  
-- Show / Hide password toggle functionality  
-- Prevents page reload on form submission  
-- Displays submitted form data below the form  
-- Inline validation error messages  
-- All fields are mandatory  
-- Email format validation  
-- Form resets after successful submission  
-- Clean and user-friendly UI  
+- Multiple numeric input fields (0–100)
+- Main progress bar updates dynamically
+- Sub-progress bars for each input value
+- Smooth animation on progress updates
+- Inline styles based on component state
+- Input validation:
+  - Values less than 0 are set to 0
+  - Values greater than 100 are set to 100
+- Color change based on percentage:
+  - Below 40% → Red
+  - 40%–70% → Orange
+  - Above 70% → Green
+- Real-time UI synchronization
 
 ---
 
 ## 3. Tech Stack
 
-- React.js  
-- JavaScript (ES6+)  
-- HTML5  
-- CSS3  
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3 (Inline Styles)
 
 ---
 
-## 4. Steps to Run Locally
+## 4. Steps to Run the Project Locally
 
 ### Prerequisites
 
-- Node.js version: **>= 16.x**  
-- npm or yarn installed  
+- Node.js version: **>= 16.x**
+- npm installed
 
 ### Installation
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SahithiGurram10/vasundharaa_geo_tasks>
 ```
-
-2.Navigate to the project directory:
+2. Navigate to the project directory:
 ```
-cd react-form-handling-app
+cd task_3_progress_bar
+```
+3. Install dependencies:
+```
+npm install
+```
+# 5.Start the Application
+```
+npm start
 ```

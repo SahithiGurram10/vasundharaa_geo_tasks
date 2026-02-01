@@ -46,10 +46,22 @@ This project is designed to be clean, beginner-friendly, and aligned with real-w
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone <https://github.com/SahithiGurram10/vasundharaa_geo_tasks>
 ```
 
 2.Navigate to the project directory:
 ```
 cd react-form-handling-app
+```
+
+3. Install dependencies:
+```
+npm install
+```
+
+# 5.Start the Application
+
+
+```
+npm start 
 ```
