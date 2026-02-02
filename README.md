@@ -35,8 +35,7 @@ npm install
 `
 ## Start Command
 `
-npm start
-
+ npm start
 `
 
 ## The application will run on:
