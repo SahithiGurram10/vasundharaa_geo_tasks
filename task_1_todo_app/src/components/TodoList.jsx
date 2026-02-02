@@ -2,7 +2,7 @@ import TodoItem from "./TodoItem";
 
 function TodoList({ tasks, onToggle, onDelete }) {
   if (tasks.length === 0) {
-    return <p className="empty">No tasks available</p>;
+    return <p className="empty-text">No tasks available</p>;
   }
 
   return (

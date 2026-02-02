@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
 import FilterBar from "./components/FilterBar";
@@ -9,46 +10,53 @@ function App() {
   const [filter, setFilter] = useLocalStorage("filter", "All");
 
   const addTask = (text, priority) => {
-    const newTask = {
-      id: Date.now(),
-      text,
-      priority,
-      completed: false,
-    };
-    setTasks([...tasks, newTask]);
+    setTasks([
+      ...tasks,
+      { id: Date.now(), text, priority, completed: false },
+    ]);
   };
 
   const toggleTask = (id) => {
     setTasks(
-      tasks.map((task) =>
-        task.id === id ? { ...task, completed: !task.completed } : task
+      tasks.map((t) =>
+        t.id === id ? { ...t, completed: !t.completed } : t
       )
     );
   };
 
   const deleteTask = (id) => {
-    setTasks(tasks.filter((task) => task.id !== id));
+    setTasks(tasks.filter((t) => t.id !== id));
   };
 
-  const filteredTasks = tasks.filter((task) => {
-    if (filter === "Active") return !task.completed;
-    if (filter === "Completed") return task.completed;
+  const filteredTasks = tasks.filter((t) => {
+    if (filter === "Active") return !t.completed;
+    if (filter === "Completed") return t.completed;
     return true;
   });
 
   return (
-    <div className="app">
-      <h1 class="text-2xl font-bold mb-4 text-center">Todo App</h1>
+    <>
+      <Navbar />
 
+      <div className="main-container">
+        
+        <div className="card">
+          <h3>Add Task</h3>
+          <TodoForm onAddTask={addTask} />
+        </div>
 
-      <TodoForm onAddTask={addTask} />
-      <FilterBar currentFilter={filter} onChangeFilter={setFilter} />
-      <TodoList
-        tasks={filteredTasks}
-        onToggle={toggleTask}
-        onDelete={deleteTask}
-      />
-    </div>
+        
+        <div className="card">
+          <h3>My Tasks</h3>
+          <FilterBar currentFilter={filter} onChangeFilter={setFilter} />
+          <TodoList
+            tasks={filteredTasks}
+            onToggle={toggleTask}
+            onDelete={deleteTask}
+          />
+        </div>
+      </div>
+    </>
   );
 }
 

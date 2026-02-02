@@ -1,43 +1,120 @@
-/* src/styles.css */
-.app-container {
-  max-width: 500px;
-  margin: 40px auto;
-  font-family: Arial, sans-serif;
+/* Reset */
+body {
+  margin: 0;
+  background-color: #f4f6f8;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  background-color: #4f46e5;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-title {
+  color: #ffffff;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Main Container */
+.app-container {
+  max-width: 550px;
+  margin: 40px auto;
+  padding: 0 15px;
+}
+
+/* Card */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* Form */
 .form-group {
   margin-bottom: 15px;
 }
 
-input {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
+label {
+  font-weight: 500;
+  color: #333;
 }
 
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* Password */
 .password-wrapper {
   display: flex;
   gap: 10px;
 }
 
 .toggle-btn {
-  padding: 8px;
+  padding: 10px 14px;
+  border: none;
+  background-color: #e0e7ff;
+  color: #1e3a8a;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.toggle-btn:hover {
+  background-color: #c7d2fe;
+}
+
+/* Submit Button */
+.submit-btn {
+  padding: 12px;
+  width: 100%;
+  margin-top: 15px;
+  background-color: #4f46e5;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.submit-btn {
-  padding: 10px;
-  width: 100%;
+.submit-btn:hover {
+  background-color: #4338ca;
+}
+
+/* Errors */
+.error {
+  color: #dc2626;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Submitted Data */
+.result {
   margin-top: 10px;
 }
 
-.error {
-  color: red;
-  font-size: 12px;
+.result h2 {
+  margin-bottom: 15px;
+  color: #4f46e5;
 }
 
-.result {
-  margin-top: 30px;
-  padding: 15px;
-  border: 1px solid #ccc;
+.result p {
+  margin: 6px 0;
+  font-size: 14px;
 }

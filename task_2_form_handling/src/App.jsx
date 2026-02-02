@@ -11,14 +11,26 @@ const App = () => {
   };
 
   return (
-    <div className="app-container">
-      <h1>React Form Handling Task</h1>
-      <UserForm onSubmit={handleFormSubmit} />
-      {submittedUser && <SubmittedData data={submittedUser} />}
+    <div>
+      {/* Navbar */}
+      <nav className="navbar">
+        <h1 className="navbar-title">React Form Handling Task</h1>
+      </nav>
+
+      {/* Main Content */}
+      <div className="app-container">
+        <div className="card">
+          <UserForm onSubmit={handleFormSubmit} />
+        </div>
+
+        {submittedUser && (
+          <div className="card">
+            <SubmittedData data={submittedUser} />
+          </div>
+        )}
+      </div>
     </div>
   );
 };
 
 export default App;
-
-

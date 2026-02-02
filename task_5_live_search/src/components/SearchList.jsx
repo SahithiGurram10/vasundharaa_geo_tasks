@@ -1,6 +1,6 @@
 import { useState, useMemo } from "react";
 import SearchInput from "./SearchInput";
-import ResultCount from "./Resultount";
+import ResultCount from "./ResultCount";
 import HighlightedText from "./HighlightedText";
 
 const NAMES = [

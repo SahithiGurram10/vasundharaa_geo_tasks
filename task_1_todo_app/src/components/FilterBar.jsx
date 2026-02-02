@@ -1,13 +1,13 @@
 function FilterBar({ currentFilter, onChangeFilter }) {
   return (
-    <div className="filters">
-      {["All", "Active", "Completed"].map((type) => (
+    <div className="filter-bar">
+      {["All", "Active", "Completed"].map((f) => (
         <button
-          key={type}
-          className={currentFilter === type ? "active" : ""}
-          onClick={() => onChangeFilter(type)}
+          key={f}
+          className={currentFilter === f ? "active" : ""}
+          onClick={() => onChangeFilter(f)}
         >
-          {type}
+          {f}
         </button>
       ))}
     </div>
