@@ -1,25 +1,99 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #bfc0c7, #bdbac0);
+  font-family: "Inter", "Segoe UI", sans-serif;
+  width: 100%;
+}
+
+
+.timer-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 32px 36px;
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #1f2937;
+}
+
+
 button {
   padding: 10px 18px;
-  margin-right: 12px;
+  margin-right: 10px;
+  margin-top: 12px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
-  background-color: grey;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
   color: #ffffff;
-  transition: background-color 0.2s ease, transform 0.1s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 button:hover {
-  background-color: #252938;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.4);
 }
 
 button:active {
-  transform: scale(0.97);
+  transform: scale(0.96);
 }
 
 button:disabled {
-  background-color: #9ca3af;
+  background: #9ca3af;
   cursor: not-allowed;
+  box-shadow: none;
+}
+
+
+.status {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.status.Idle {
+  color: #6b7280;
+}
+
+.status.Running {
+  color: #16a34a;
+}
+
+.status.Paused {
+  color: #f59e0b;
+}
+
+.status.Completed {
+  color: #dc2626;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

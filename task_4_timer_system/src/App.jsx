@@ -96,8 +96,9 @@ export default function App() {
   };
 
   return (
-    <div style={{ padding: "30px", fontFamily: "Arial" }}>
-      <h2>Advanced Countdown Timer</h2>
+  <div className="app-container">
+    <div className="timer-card">
+      <h2 className="title">Advanced Countdown Timer</h2>
 
       <TimerInput
         value={inputSeconds}
@@ -115,5 +116,7 @@ export default function App() {
         onReset={resetTimer}
       />
     </div>
-  );
+  </div>
+);
+
 }
