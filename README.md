@@ -27,7 +27,7 @@ This repository contains the implementation of the React Developer Intern assign
   `
 2. Navigate to the project directory:
 `
-cd <project-folder-name>
+cd <vasundharaa_geo_tasks>
 `
 3. Install dependencies:
 `
