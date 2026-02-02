@@ -89,7 +89,6 @@ http://localhost:3000
 - Display count of matching results
 - Show “No matches found” when applicable
 
-`
 
 Thank you for reviewing this assignment. I look forward to your feedback and the opportunity to grow with Vasundharaa Geo Technologies.
 
